@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="Scripts/css/OutrosEstilos.css">
+        <link type="text/css" rel="stylesheet" href="Scripts/css/Estilos-compras.css">
+        <script type="text/javascript" src="Scripts/js/bootstrap.js"></script>
+        <link type="text/css" rel="stylesheet" href="Scripts/css/bootstrap.css"> 
+
+        <title>Cadastro de fornecedor</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <!--                  Abre topo site                -->
+            <nav class="navbar navbar-default" style=" border-bottom: solid 2px #C2BDC2; background-color: rgba(246, 244, 249, 0.88);"> 
+                <div class="container-fluid">
+                    <div class="navbar-header col-xs-12 col-lg-2">
+                        <a class="navbar-brand" href="#">
+                           <img style="height: 90px; width: 160px;" src="Img/clientes.png">
+                        </a>                                                
+                    </div>  
+                   
+                    <div style=" color: #88549F; border-color: #888;" class="navbar-header col-xs-12 col-lg-7">
+                        <h1 class="" style="font-size: 40px;"><marquee behavior="scroll">Compras - Cadastro de Fornecedor</marquee></h1>                
+                    </div>
+                    <div style=" color: #304CE9; border-color: #888; margin-top: 40px;" class="col-xs-6 col-lg-1 ">                       
+                        <div class="col-xs-6 col-xs-offset-1 col-lg-12 col-lg-offset-1">
+                             <span class="glyphicon glyphicon-question-sign"></span>
+                        </div>
+                        <div class="col-xs-6 col-xs-offset-1 col-lg-12 col-lg-offset-1">
+                            <a href="Index.php">Ajuda!</a>
+                        </div>
+                    </div>
+                    <div style=" color: #304CE9; border-color: #888; margin-top: 40px;" class="col-xs-6 col-lg-1 ">                       
+                        <div class="col-xs-1 col-xs-offset-1 col-lg-12 col-lg-offset-1">
+                            <button type="button" class="btn-logoff"><img src="../Views/Img/Logoff.png " class="ImagemLogoff">Logoff</button>
+                        </div>
+                    </div>                   
+                </div>
+            </nav>                        
+            <!--                Fecha topo              -->  
+            <!--                    formulario              -->
+            <div class="row">
+                <div class=" col-xs-12  col-lg-10 col-lg-offset-1" style="background-color: #FFFFFF; border-radius: 5px; border-top: solid 2px #9d9d9d; border-left: solid 2px #9d9d9d ">
+                    <form method="post" action="">
+                        <div class="row" style="background-color: rgb(16, 15, 15); margin-top: 10px;">
+                            <div class="col-md-6 col-md-offset-4"><label for="empresa"><h1 style="margin-top: 0; color: #FFFFFF;">Fornecedor</h1></label></div>
+                        </div>
+                        <div class="row" style="background-color: #EAE7D7;" >         
+                            <div class="bg-default">
+                                <div class="row">
+                                    <div class="col-md-12 col-xs-12 col-lg-12">
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <label class="control-label" for="empresa" style="color: rgb(105, 8, 148); font-size: 16px;">Empresa:</label>
+                                                <input type="text" id="empresa" class="form-control" style="width: 260px;" placeholder="Informe aqui o nome da Empresa">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <label class="control-label" for="responsavel" style="color: rgb(105, 8, 148); font-size: 16px;">Responsável:</label>
+                                                <input type="text" id="responsavel" class="form-control" style="width: 260px;" placeholder="Informe aqui o nome do responsável">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr style="border-top: dashed rgba(156, 119, 152, 0.4); width: 96%;">
+                                <div class="row">
+                                    <div class="col-md-12 col-xs-12 col-lg-12">
+                                        <div class="col-xs-12 col-lg-4">
+                                            <div class="form-group">
+                                                <label class="control-label" for="fone" style="color: rgb(105, 8, 148); font-size: 16px;">Fone:</label>
+                                                <input type="text" id="fone" class="form-control" style="width: 260px;" placeholder="Ex.: (61)3302-8223">
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-lg-4 col-lg-offset-2">
+                                            <div class="form-group">
+                                                <label class="control-label" for="email" style="color: rgb(105, 8, 148); font-size: 16px;">Email:</label>
+                                                <input type="email" id="email" class="form-control" style="width: 260px;" placeholder="Ex.: gustavomoura@gmail.com">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>    
+                        </div>
+                    </form>
+                    <div class="row" >
+                        <!-- Split button -->
+                        <div class="btn-group-justified" style="background-color: #7D868E; margin-bottom: 10px;">
+                            <div class="col-xs-8 col-xs-offset-4 col-sm-2 col-sm-offset-1 col-lg-3 col-lg-offset-1" style="margin-bottom: 10px">
+                                <button type="button" class="botoes">Incluir</button>
+                            </div>
+                            <div class=" col-xs-4 col-sm-2 col-sm-offset-1 col-lg-3 col-lg-offset-1">
+                                <button type="button" class="botoes">Alterar</button>
+                            </div>
+                            <div class="col-xs-8 col-xs-offset-4 col-sm-2 col-sm-offset-1 col-lg-3 col-lg-offset-1">
+                                <button type="button" class="botoes">Apagar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--                      fecha formulario                -->
+            <!--            botão de retorno                -->
+            <div class="col-xs-10 col-xs-offset-1 col-lg-10 col-lg-offset-1">
+                <button type="button" class="botoes" style="margin-top: 40px; border-radius: 30px; font-size: 20px;"><img style="width: 30px; height: 35px;" src="Img/voltar.png">Voltar</button>
+            </div>
+            <!--            fecha botão de retorno          -->
+            
+        </div>
+        <!--                          fecha conteiner                     -->
+    </body>
+</html>
